@@ -1,0 +1,21 @@
+{
+  "name": "scrolling-game",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "STELLAR ASSAULT - a horizontal-scrolling action shooter built with TypeScript + HTML5 Canvas",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "gen:assets": "node scripts/generate-assets.mjs"
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "^0.1.0",
+    "playwright": "^1.60.0",
+    "tsx": "^4.22.3",
+    "typescript": "~5.8.0",
+    "vite": "^6.0.0"
+  }
+}

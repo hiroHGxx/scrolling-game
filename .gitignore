@@ -33,3 +33,6 @@ Thumbs.db
 .cache/
 .parcel-cache/
 .vite/
+scripts/_preview.png
+
+scripts/_shot-*.png

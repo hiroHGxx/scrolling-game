@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#05060f" />
+    <title>STELLAR ASSAULT</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        background: #05060f;
+        overflow: hidden;
+        font-family: "Segoe UI", system-ui, sans-serif;
+      }
+      #app {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(circle at 50% 35%, #0d1430 0%, #05060f 70%, #02030a 100%);
+      }
+      #game {
+        display: block;
+        image-rendering: auto;
+        background: #05060f;
+        box-shadow: 0 0 60px rgba(64, 180, 255, 0.18), 0 0 0 1px rgba(120, 200, 255, 0.12);
+        border-radius: 6px;
+        max-width: 100%;
+        max-height: 100%;
+        touch-action: none;
+      }
+      #loading {
+        position: absolute;
+        color: #6fe6ff;
+        font-size: 14px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        animation: pulse 1.2s ease-in-out infinite;
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.35; }
+        50% { opacity: 1; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div id="loading">Loading…</div>
+      <canvas id="game"></canvas>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
